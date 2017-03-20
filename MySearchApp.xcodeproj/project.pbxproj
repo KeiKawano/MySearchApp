@@ -7,15 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AACF861F1E7FC10200421B11 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AACF861E1E7FC10200421B11 /* WebViewController.swift */; };
 		AAD7FE831E7F7B3400D9E878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7FE821E7F7B3400D9E878 /* AppDelegate.swift */; };
 		AAD7FE851E7F7B3400D9E878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7FE841E7F7B3400D9E878 /* ViewController.swift */; };
 		AAD7FE881E7F7B3400D9E878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7FE861E7F7B3400D9E878 /* Main.storyboard */; };
 		AAD7FE8A1E7F7B3400D9E878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD7FE891E7F7B3400D9E878 /* Assets.xcassets */; };
 		AAD7FE8D1E7F7B3400D9E878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7FE8B1E7F7B3400D9E878 /* LaunchScreen.storyboard */; };
 		AAD7FE951E7F874100D9E878 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7FE941E7F874100D9E878 /* ItemData.swift */; };
+		AAD7FE971E7F8A4900D9E878 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7FE961E7F8A4900D9E878 /* ItemTableViewCell.swift */; };
+		AAD7FE991E7F95F500D9E878 /* SearchItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7FE981E7F95F500D9E878 /* SearchItemTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AACF861E1E7FC10200421B11 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		AAD7FE7F1E7F7B3400D9E878 /* MySearchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySearchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD7FE821E7F7B3400D9E878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AAD7FE841E7F7B3400D9E878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		AAD7FE8C1E7F7B3400D9E878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD7FE8E1E7F7B3400D9E878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAD7FE941E7F874100D9E878 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
+		AAD7FE961E7F8A4900D9E878 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		AAD7FE981E7F95F500D9E878 /* SearchItemTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchItemTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,7 +65,10 @@
 				AAD7FE821E7F7B3400D9E878 /* AppDelegate.swift */,
 				AAD7FE841E7F7B3400D9E878 /* ViewController.swift */,
 				AAD7FE861E7F7B3400D9E878 /* Main.storyboard */,
+				AAD7FE981E7F95F500D9E878 /* SearchItemTableViewController.swift */,
+				AACF861E1E7FC10200421B11 /* WebViewController.swift */,
 				AAD7FE941E7F874100D9E878 /* ItemData.swift */,
+				AAD7FE961E7F8A4900D9E878 /* ItemTableViewCell.swift */,
 				AAD7FE891E7F7B3400D9E878 /* Assets.xcassets */,
 				AAD7FE8B1E7F7B3400D9E878 /* LaunchScreen.storyboard */,
 				AAD7FE8E1E7F7B3400D9E878 /* Info.plist */,
@@ -140,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD7FE991E7F95F500D9E878 /* SearchItemTableViewController.swift in Sources */,
+				AACF861F1E7FC10200421B11 /* WebViewController.swift in Sources */,
+				AAD7FE971E7F8A4900D9E878 /* ItemTableViewCell.swift in Sources */,
 				AAD7FE951E7F874100D9E878 /* ItemData.swift in Sources */,
 				AAD7FE851E7F7B3400D9E878 /* ViewController.swift in Sources */,
 				AAD7FE831E7F7B3400D9E878 /* AppDelegate.swift in Sources */,
@@ -304,6 +316,7 @@
 				AAD7FE931E7F7B3400D9E878 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -27,10 +27,10 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
-        <!--Table View Controller-->
+        <!--Search Item Table View Controller-->
         <scene sceneID="jqw-DM-H5R">
             <objects>
-                <tableViewController id="afD-B4-e4b" sceneMemberID="viewController">
+                <tableViewController id="afD-B4-e4b" customClass="SearchItemTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="PZf-fV-HiL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,11 +44,11 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="kHH-pP-rnp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="kHH-pP-rnp" customClass="ItemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kHH-pP-rnp" id="kAQ-1C-QlH">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1jQ-ME-sk8">
@@ -88,6 +88,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="itemImageView" destination="1jQ-ME-sk8" id="Oc3-kb-RRf"/>
+                                    <outlet property="itemPriceLabel" destination="GHV-qZ-IhE" id="tgi-oI-LrB"/>
+                                    <outlet property="itemTitleLabel" destination="tHA-nd-SUU" id="wg4-qC-CaW"/>
                                     <segue destination="xy3-JC-EKz" kind="show" id="UhF-xX-gfw"/>
                                 </connections>
                             </tableViewCell>
@@ -103,10 +106,10 @@
             </objects>
             <point key="canvasLocation" x="1493.5999999999999" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--Web View Controller-->
         <scene sceneID="mqI-qT-kdL">
             <objects>
-                <viewController id="xy3-JC-EKz" sceneMemberID="viewController">
+                <viewController id="xy3-JC-EKz" customClass="WebViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iaB-1w-Pz7"/>
                         <viewControllerLayoutGuide type="bottom" id="Fi0-9E-gh7"/>
@@ -127,6 +130,9 @@
                             <constraint firstItem="Fi0-9E-gh7" firstAttribute="top" secondItem="6Xf-tw-g40" secondAttribute="bottom" id="RGo-PB-TQs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webView" destination="6Xf-tw-g40" id="fPw-nm-lYw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Km-Ay-5oB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
