@@ -12,6 +12,7 @@
 		AAD7FE881E7F7B3400D9E878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7FE861E7F7B3400D9E878 /* Main.storyboard */; };
 		AAD7FE8A1E7F7B3400D9E878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD7FE891E7F7B3400D9E878 /* Assets.xcassets */; };
 		AAD7FE8D1E7F7B3400D9E878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD7FE8B1E7F7B3400D9E878 /* LaunchScreen.storyboard */; };
+		AAD7FE951E7F874100D9E878 /* ItemData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAD7FE941E7F874100D9E878 /* ItemData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		AAD7FE891E7F7B3400D9E878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD7FE8C1E7F7B3400D9E878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD7FE8E1E7F7B3400D9E878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD7FE941E7F874100D9E878 /* ItemData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				AAD7FE821E7F7B3400D9E878 /* AppDelegate.swift */,
 				AAD7FE841E7F7B3400D9E878 /* ViewController.swift */,
 				AAD7FE861E7F7B3400D9E878 /* Main.storyboard */,
+				AAD7FE941E7F874100D9E878 /* ItemData.swift */,
 				AAD7FE891E7F7B3400D9E878 /* Assets.xcassets */,
 				AAD7FE8B1E7F7B3400D9E878 /* LaunchScreen.storyboard */,
 				AAD7FE8E1E7F7B3400D9E878 /* Info.plist */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD7FE951E7F874100D9E878 /* ItemData.swift in Sources */,
 				AAD7FE851E7F7B3400D9E878 /* ViewController.swift in Sources */,
 				AAD7FE831E7F7B3400D9E878 /* AppDelegate.swift in Sources */,
 			);
