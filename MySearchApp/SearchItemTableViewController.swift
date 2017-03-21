@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SearchItemTableViewController: UITableViewController, UISearchBarDeletate{
+class SearchItemTableViewController: UITableViewController, UISearchBarDelegate{
 
     // 商品情報を格納する配列
     var itemDataArray = [ItemData]()
@@ -16,6 +16,8 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDeletate{
     var imageCache = NSCache<AnyObject, UIImage>()
     // APIを利用するためのアプリケーションID
     let appid: String = "dj0zaiZpPTFKZ1d2MnlEdGJCeSZzPWNvbnN1bWVyc2VjcmV0Jng9MmM-"
+    // APIのURL
+    let entryUrl: String = "https://shopping.yahooapis.jp/ShoppingWebService/V1/json/itemSearch"
     // 数字を金額の形式に整形するためのフォーマッター
     let priceFormat = NumberFormatter()
     
@@ -118,15 +120,16 @@ class SearchItemTableViewController: UITableViewController, UISearchBarDeletate{
             // レスポンスデータから画像の情報を取得する
             if let itemImageDic = result["Image"] as? [String: Any] {
                 let itemImageUrl = itemImageDic["Medium"] as? String
-                ItemData.itemImageUrl = itemImageUrl
+                itemData.itemImageUrl = itemImageUrl
             }
             // 商品タイトルを格納
             let itemTitle = result["Name"] as? String
             itemData.itemTitle = itemTitle
             // 商品価格を格納
-            let itemPriceDic = result["Price"] as? [String: Any]
-            let itemPrice = itemPriceDic["_value"] as? String
-            itemData.itemPrice = itemPrice
+            if let itemPriceDic = result["Price"] as? [String: Any] {
+                let itemPrice = itemPriceDic["_value"] as? String
+                itemData.itemPrice = itemPrice
+            }
             // 商品のURLを格納（WebView用）
             let itemUrl = result["Url"] as? String
             itemData.itemUrl = itemUrl
